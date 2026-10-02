@@ -1,3 +1,4 @@
+import { useState } from 'react';
 // مكون جدول تقارير المتابعة والمبيعات مع خاصية الإسناد والتعديل المباشر وربط العقارات
 function LeadsReportTab() {
   const [leads, setLeads] = useState<any[]>([]);
