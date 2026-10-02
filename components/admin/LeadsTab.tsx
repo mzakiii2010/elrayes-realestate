@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { supabase } from '@/lib/supabase';
+import { CheckCircle, XCircle, Save, Edit3, User } from 'lucide-react';
 // مكون جدول تقارير المتابعة والمبيعات مع خاصية الإسناد والتعديل المباشر وربط العقارات
 function LeadsReportTab() {
   const [leads, setLeads] = useState<any[]>([]);
